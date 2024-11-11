@@ -1,0 +1,72 @@
+@import 'breakpoints';
+@import 'mixins';
+@import 'variables';
+
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    gap: $lg-spacing;
+    box-shadow: $base-boxShadow;
+    padding: $xl-spacing;
+    border-radius: $lg-radius;
+    background-color: white;
+}
+
+.cv-head {
+    display: flex;
+    flex-direction: column;
+    gap: $lg-spacing;
+}
+
+.cv-aboutme {
+    display: flex;
+    gap: $xl-spacing;
+    justify-content: space-between;
+
+    .cv-greetings {
+        font-size: $lg-font;
+    }
+
+    .cv-title {
+        font-size: 50px;
+    }
+
+    .cv-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cv-img {
+        min-width: 200px;
+        width: 200px;
+        height: 200px;
+        border-radius: $full-radius;
+        box-shadow: $base-boxShadow;
+        overflow: hidden;
+        background-image: url('/src/assets/images/profile.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .cv-contact__list {
+        display: flex;
+        gap: $base-spacing $lg-spacing;
+        flex-wrap: wrap;
+
+        .cv-contact__item {
+            display: flex;
+            gap: $base-spacing;
+            font-size: $lg-font;
+        }
+    }
+
+    .cv-slogan {
+        font-size: $lg-font;
+    }
+}
+
+.cv-desc {
+    font-size: $lg-font;
+}
