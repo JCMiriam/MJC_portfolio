@@ -16,57 +16,72 @@
     display: flex;
     flex-direction: column;
     gap: $lg-spacing;
-}
 
-.cv-aboutme {
-    display: flex;
-    gap: $xl-spacing;
-    justify-content: space-between;
-
-    .cv-greetings {
-        font-size: $lg-font;
-    }
-
-    .cv-title {
-        font-size: 50px;
-    }
-
-    .cv-data {
+    .cv-aboutme {
         display: flex;
-        flex-direction: column;
+        gap: $xl-spacing;
         justify-content: space-between;
-    }
-
-    .cv-img {
-        min-width: 200px;
-        width: 200px;
-        height: 200px;
-        border-radius: $full-radius;
-        box-shadow: $base-boxShadow;
-        overflow: hidden;
-        background-image: url('/src/assets/images/profile.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .cv-contact__list {
-        display: flex;
-        gap: $base-spacing $lg-spacing;
-        flex-wrap: wrap;
-
-        .cv-contact__item {
+    
+        .cv-greetings {
+            font-size: $lg-font;
+        }
+    
+        .cv-title {
+            font-size: 50px;
+        }
+    
+        .cv-data {
             display: flex;
-            gap: $base-spacing;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .cv-img {
+            min-width: 200px;
+            width: 200px;
+            height: 200px;
+            border-radius: $full-radius;
+            box-shadow: $base-boxShadow;
+            overflow: hidden;
+            background-image: url('/src/assets/images/profile.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    
+        .cv-contact__list {
+            display: flex;
+            gap: $base-spacing $lg-spacing;
+            flex-wrap: wrap;
+    
+            .cv-contact__item {
+                display: flex;
+                gap: $base-spacing;
+                font-size: $lg-font;
+            }
+        }
+    
+        .cv-slogan {
             font-size: $lg-font;
         }
     }
-
-    .cv-slogan {
+    
+    .cv-desc {
         font-size: $lg-font;
     }
 }
 
-.cv-desc {
-    font-size: $lg-font;
+.cv-group__title {
+    width: 100%;
+
+    .cv-group__title--text {
+        font-size: $xl-font;
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $key;
+        }
+    }
 }
