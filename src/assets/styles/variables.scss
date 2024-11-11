@@ -12,7 +12,8 @@ $green-success: #24FFB2;
 $orange-warning: #FFAB24;
 $red-error: #FF2724;
 
-$primary-gradient: linear-gradient(90deg, rgba(88, 3, 229, 1) 0%, rgba(131, 15, 202, 1) 35%, rgba(243, 40, 158, 1) 100%);
+$primary-gradient: linear-gradient(169deg, rgba(88,3,229,1) 0%, rgba(131,15,202,1) 35%, rgba(243,40,158,1) 100%);
+$lowOpacity-gradient: linear-gradient(169deg, rgba(88,3,229,1) 0%, rgba(131,15,202,0.6) 35%, rgba(243,40,158,1) 100%);
 
 // Spacing
 $sm-spacing: 5px;

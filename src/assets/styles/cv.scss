@@ -1,6 +1,6 @@
-@import 'breakpoints';
-@import 'mixins';
-@import 'variables';
+@use 'breakpoints' as *;
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .cv-container {
     display: flex;
@@ -27,12 +27,9 @@
         }
     
         .cv-title {
+            @include text-gradient;
             font-size: $xxl-font;
             font-weight: bold;
-            background-image: $primary-gradient;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
         }
     
         .cv-data {
@@ -64,6 +61,11 @@
                 gap: $base-spacing;
                 font-size: $lg-font;
             }
+
+            .icon {
+                @include text-gradient;
+                margin-right: $sm-spacing;
+            }
         }
     
         .cv-slogan {
@@ -83,6 +85,7 @@
 
     &__title {
         width: 100%;
+        @include text-gradient;
     
         &--text {
             font-size: $xl-font;
@@ -91,7 +94,7 @@
                 display: block;
                 width: 100%;
                 height: 2px;
-                background-color: $key;
+                background: $primary-gradient;
             }
         }
     }
@@ -132,7 +135,7 @@
             }
 
             &--btn {
-                color: $gray-medium;
+                @include sm-button;
             }
         }
     }
