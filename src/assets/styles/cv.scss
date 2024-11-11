@@ -27,7 +27,12 @@
         }
     
         .cv-title {
-            font-size: 50px;
+            font-size: $xxl-font;
+            font-weight: bold;
+            background-image: $primary-gradient;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
     
         .cv-data {
@@ -54,7 +59,7 @@
             gap: $base-spacing $lg-spacing;
             flex-wrap: wrap;
     
-            .cv-contact__item {
+            &__item {
                 display: flex;
                 gap: $base-spacing;
                 font-size: $lg-font;
@@ -71,19 +76,68 @@
     }
 }
 
-.cv-group__title {
-    width: 100%;
+.cv-group {
+    display: flex;
+    flex-direction: column;
+    gap: $md-spacing;
 
-    .cv-group__title--text {
-        font-size: $xl-font;
-        &::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: $key;
+    &__title {
+        width: 100%;
+    
+        &--text {
+            font-size: $xl-font;
+            &::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: $key;
+            }
         }
     }
+
+    &__group {
+        &__item {
+            &--content {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+    
+            &--title {
+                font-size: $lg-font;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            &--list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: $md-spacing;
+            }
+
+            &--skill {
+                padding: 0 $base-spacing;
+                color: $gray-medium;
+                border-right: 1px solid $gray-medium;
+
+                &:first-of-type {
+                    padding-left: 0;
+                }
+
+                &:last-of-type {
+                    padding-right: 0;
+                    border-right: 0;
+                }
+            }
+
+            &--btn {
+                color: $gray-medium;
+            }
+        }
+    }
+    
 }
+
 
 

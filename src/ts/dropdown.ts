@@ -1,8 +1,21 @@
 export const toggleDropdown = () => {
-    const toggleButton = document.querySelector('.dropdown-toggle') as HTMLElement;
-    const dropdownContent = document.querySelector('.dropdown-content') as HTMLElement;
+    const dropdowns = document.querySelectorAll('.dropdown');
   
-    toggleButton.addEventListener('click', () => {
-        dropdownContent.classList.toggle('active');
+    dropdowns.forEach(dropdown => {
+        const toggleButton = dropdown.querySelector('.dropdown-toggle') as HTMLButtonElement;
+        const icon = dropdown.querySelector('.icon') as HTMLElement;
+        const dropdownContent = dropdown.querySelector('.dropdown-content') as HTMLElement;
+  
+        toggleButton.addEventListener('click', () => {
+            dropdownContent.classList.toggle('active');
+            
+            if (dropdownContent.classList.contains('active')) {
+                icon.classList.add('fa-caret-up');
+                icon.classList.remove('fa-caret-down');
+              } else {
+                icon.classList.add('fa-caret-down');
+                icon.classList.remove('fa-caret-up');
+              }
+        });
     });
-}
+  }
