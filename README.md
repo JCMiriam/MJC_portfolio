@@ -1,3 +1,5 @@
+⚙️ Note: This portfolio is a work in progress, with more projects and improvements on the way. Stay tuned!
+
 📁 Miriam Jurado Frontend Portfolio
 
 👋 What will you find in this portfolio?
