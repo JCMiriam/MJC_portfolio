@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .nav {
     width: 100%;
@@ -15,8 +16,19 @@
             a {
                 text-decoration: none;
                 color: $key;
+                transition: color 0.3s ease, font-weight 0.3s ease;
+
+                &:hover {
+                    color: $pink_strong;
+                    font-weight: bold;
+                }
             }
         }
+    }
+
+    .active a {
+        color: $pink_strong;
+        font-weight: bold;
     }
     
 }

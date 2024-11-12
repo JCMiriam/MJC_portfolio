@@ -219,5 +219,13 @@
     
 }
 
+.cv-presentation {
+    margin-top: $xl-spacing;
+    color: $gray-medium;
+    display: flex;
+    flex-direction: column;
+    gap: $md-spacing;
+}
+
 
 
