@@ -12,6 +12,7 @@
         &__item{
             font-size: $lg-font;
             text-transform: uppercase;
+            cursor: pointer;
 
             a {
                 text-decoration: none;
@@ -26,7 +27,7 @@
         }
     }
 
-    .active a {
+    .active {
         color: $pink_strong;
         font-weight: bold;
     }
