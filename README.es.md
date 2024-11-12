@@ -2,6 +2,7 @@
 
 <h1>📁 Miriam Jurado Portfolio</h1>
 <h3>¡Puedes echar un ojo <a href="https://jcmiriam.github.io/MJC_portfolio/">aquí!</a></h3>
+<p>Próximamente responsive, idiomas y más páginas.</p>
 
 <h4>👋 ¿Qué vas a encontrar en este portfolio?</h4>
 Bienvenido/a a mi espacio en GitHub, donde he reunido algunos de mis proyectos y experimentos en desarrollo y diseño frontend. Aquí verás aplicaciones web y componentes interactivos desarrollados principalmente con JavaScript, TypeScript y React, junto a otras herramientas modernas que dan vida a interfaces intuitivas y visualmente atractivas.
