@@ -245,6 +245,14 @@ button {
   gap: 15px;
 }
 
+.cv-presentation {
+  margin-top: 50px;
+  color: #606060;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .dropdown {
   position: relative;
 }
@@ -277,6 +285,15 @@ button {
 .nav-list__item a {
   text-decoration: none;
   color: #111111;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+.nav-list__item a:hover {
+  color: #f3289e;
+  font-weight: bold;
+}
+.nav .active a {
+  color: #f3289e;
+  font-weight: bold;
 }
 
 .cv-sidebar {
