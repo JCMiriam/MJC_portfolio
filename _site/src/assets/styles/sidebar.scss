@@ -1,0 +1,94 @@
+@use 'variables' as *;
+
+.cv-sidebar {
+    min-width: 50px;
+    margin-top: $xl-spacing;
+
+    &__container {
+        position: relative;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: $md-spacing;
+    }
+
+    &__item {
+        width: 50px;
+        height: 50px;
+        border-radius: $full-radius;
+        background-color: $pink_strong;
+        box-shadow: $base-boxShadow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $purple-medium;
+        }
+
+        .icon {
+            color: white;
+            font-size: $xl-font;
+        }
+
+        & + .cv-sidebar__content {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 70px;
+            min-width: 350px;
+            background-color: $gray-medium;
+            color: white;
+            box-shadow: $base-boxShadow;
+            padding: $sm-spacing;
+            border-radius: $md-radius;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            padding: $lg-spacing;
+            flex-direction: column;
+            z-index: 100;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: -10px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 8px 12px 8px 0;
+                border-color: transparent $gray-medium transparent transparent;
+            }
+        }
+
+        &:hover + .cv-sidebar__content,
+        &.active + .cv-sidebar__content {
+            
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__title {
+        font-size: $lg-font;
+        margin-bottom: $base-spacing;
+    }
+
+    &__data {
+        margin-bottom: $base-spacing;
+    }
+
+    &__sublist {
+        display: flex;
+        flex-direction: column;
+        gap: $base-spacing;
+        margin-bottom: $md-spacing;
+        padding-left: $md-spacing;
+        border-left: 2px solid white;
+    }
+}

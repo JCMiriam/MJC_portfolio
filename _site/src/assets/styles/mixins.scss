@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == small {
+      @media (max-width: #{$breakpoint-small}) { @content; }
+    } @else if $breakpoint == medium {
+      @media (max-width: #{$breakpoint-medium}) { @content; }
+    } @else if $breakpoint == large {
+      @media (max-width: #{$breakpoint-large}) { @content; }
+    } @else if $breakpoint == extra-large {
+      @media (max-width: #{$breakpoint-extra-large}) { @content; }
+    }
+  }
+
+@mixin text-gradient {
+    background: $primary-gradient;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@mixin sm-button {
+    display: flex;
+    justify-content: space-between;
+    gap: $base-spacing;
+    box-shadow: $base-boxShadow;
+    background: $gray-medium;
+    border-radius: $lg-radius;
+    padding: $sm-spacing $base-spacing;
+    height: 30px;
+    min-width: 110px;
+    transition: background-color 0.3s ease;
+    color: white;
+
+    &:hover {
+        background: $pink_strong;
+    }
+}

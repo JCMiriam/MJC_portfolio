@@ -1,0 +1,42 @@
+// Colors
+$key: #111111;
+$gray-extralight: #F6F6F6;
+$gray-light: #E1E5E7;
+$gray-background: #F0F4F5;
+$gray-midlight: #D4D4D4;
+$gray-medium: #606060;
+$purple-deep: #5803E5;
+$purple-medium: #830FCA;
+$pink_strong: #f3289e;
+$green-success: #24FFB2;
+$orange-warning: #FFAB24;
+$red-error: #FF2724;
+
+$primary-gradient: linear-gradient(169deg, rgba(88,3,229,1) 0%, rgba(131,15,202,1) 35%, rgba(243,40,158,1) 100%);
+$lowOpacity-gradient: linear-gradient(169deg, rgba(88,3,229,1) 0%, rgba(131,15,202,0.6) 35%, rgba(243,40,158,1) 100%);
+
+// Spacing
+$sm-spacing: 5px;
+$base-spacing: 10px;
+$md-spacing: 15px;
+$lg-spacing: 30px;
+$xl-spacing: 50px;
+
+// Font size
+$sm-font: 10px;
+$base-font: 12px;
+$md-font: 14px;
+$lg-font: 18px;
+$xl-font: 24px;
+$xxl-font: 50px;
+
+// Radius
+$sm-radius: 3px;
+$base-radius: 5px;
+$md-radius: 20px;
+$lg-radius: 40px;
+$full-radius: 100%;
+
+// Box shadow
+$base-boxShadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+$inset-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);

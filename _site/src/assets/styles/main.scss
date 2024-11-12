@@ -1,0 +1,20 @@
+@use 'base' as *;
+@use 'breakpoints' as *;
+@use 'cv' as *;
+@use 'dropdown' as *;
+@use 'mixins' as *;
+@use 'nav' as *;
+@use 'sidebar' as *;
+@use 'variables' as *;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../path/to/fonts/roboto.woff2') format('woff2'),
+       url('../path/to/fonts/roboto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hidden {
+  display: none;
+}
