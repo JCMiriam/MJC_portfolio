@@ -3,6 +3,12 @@
 @use 'variables' as *;
 
 .cv-container {
+    width: 100%;
+    display: flex;
+    gap: $lg-spacing;
+}
+
+.cv-profile {
     display: flex;
     flex-direction: column;
     gap: $lg-spacing;
@@ -127,10 +133,7 @@
                 padding: 0 $base-spacing;
                 color: $gray-medium;
                 border-right: 1px solid $gray-medium;
-
-                &:first-of-type {
-                    padding-left: 0;
-                }
+                margin-bottom: $base-spacing;
 
                 &:last-of-type {
                     padding-right: 0;
@@ -169,7 +172,8 @@
 
                 &--content {
                     position: absolute;
-                    background-color: $gray-light;
+                    color: white;
+                    background-color: $gray-medium;
                     border-radius: $md-radius;
                     box-shadow: $base-boxShadow;
                     width: 200px;
@@ -188,7 +192,7 @@
                         top: 50%;
                         border-width: 10px;
                         border-style: solid;
-                        border-color: transparent transparent transparent $gray-light;
+                        border-color: transparent transparent transparent $gray-medium;
                     }
                 }
 
