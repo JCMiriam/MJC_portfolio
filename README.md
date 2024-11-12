@@ -1,6 +1,7 @@
 > ⚙️ *Note: This portfolio is a work in progress, with more projects and improvements on the way. Stay tuned!*
 
 <h1>📁 Miriam Jurado Portfolio</h1>
+<h3>You can take a look <a href="https://jcmiriam.github.io/MJC_portfolio/">here!</a></h3>
 
 <h4>👋 What will you find in this portfolio?</h4>
 Welcome to my GitHub space! Here, I've gathered some of my projects and experiments in frontend development and design. You'll find web applications and interactive components built mainly with JavaScript, TypeScript, and React, along with other modern tools that bring intuitive and visually appealing interfaces to life.
